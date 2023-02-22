@@ -1,0 +1,10 @@
+version: "2.4"
+services:
+  wechat-chatgpt:
+    image: holegots/wechat-chatgpt:latest
+    environment:
+      CHAT_GPT_EMAIL: winnerisu@sina.com
+      CHAT_GPT_PASSWORD: Nlifestyle123
+      CHAT_GPT_RETRY_TIMES: 3
+      CHAT_PRIVATE_TRIGGER_KEYWORD: "小管"
+      OPENAI_PROXY: "proxy.sin.sap.corp:8080"
