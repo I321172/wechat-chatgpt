@@ -11,5 +11,6 @@ WORKDIR /app
 COPY package*.json ./
 RUN npm install
 COPY . .
-ENV WECHATY_PUPPET_WECHAT_ENDPOINT=/usr/bin/google-chrome
+#ENV WECHATY_PUPPET_WECHAT_ENDPOINT=/usr/bin/google-chrome
+RUN echo "remove WECHATY_PUPPET_WECHAT_ENDPOINT env"
 CMD xvfb-run --server-args="-screen 0 1280x800x24 -ac -nolisten tcp -dpi 96 +extension RANDR" npm run dev
