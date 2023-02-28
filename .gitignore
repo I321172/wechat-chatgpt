@@ -321,3 +321,6 @@ cache.json
 config.yaml
 .vscode
 docker-compose.yaml
+data
+k8s
+build.sh
